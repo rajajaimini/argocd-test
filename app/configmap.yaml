@@ -1,0 +1,11 @@
+# app/configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-html
+data:
+  index.html: |
+    <html>
+      <head><title>GitOps FTW</title></head>
+      <body><h1>🚀 Hello from GitOps (Argo CD)</h1></body>
+    </html>
